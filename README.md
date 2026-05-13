@@ -12,12 +12,6 @@ Công cụ CLI Python tự động phân tích video (cả hình ảnh và lời
 - 📤 Xuất 6 định dạng cùng lúc: `.docx .pdf .xlsx .pptx .md .json`
 - 🇻🇳 Hỗ trợ tốt tiếng Việt
 
-## 📋 Yêu cầu hệ thống
-
-- **Python ≥ 3.7** (khuyến nghị 3.10+; vẫn chạy được trên 3.8)
-- Kết nối internet
-- Google API key (miễn phí)
-
 ## 🚀 Cài đặt nhanh (Windows)
 
 ### Bước 1: Lấy Google API Key (miễn phí)
@@ -120,8 +114,6 @@ Gemini 2.5 Pro tính theo token. Một video 1 tiếng (~720p) khoảng:
 Google AI Studio có **gói miễn phí** cho phép xử lý vài chục video/ngày — đủ dùng cho cá nhân.
 
 ## 🐛 Khắc phục sự cố
-
-**Lỗi `No matching distribution found for google-genai/google-generativeai`** → Project hiện gọi REST API trực tiếp (qua `requests`), KHÔNG cần SDK Google. Tương thích Python ≥ 3.7. Chạy lại `install.bat` để cài bản mới.
 
 **Lỗi `ModuleNotFoundError`** → Chưa kích hoạt venv. Chạy `.venv\Scripts\activate` trước.
 
